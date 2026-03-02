@@ -1,0 +1,22 @@
+{
+    "name": "Robotech Formation CATIA V5",
+    "short_name": "CATIA V5",
+    "description": "Formation professionnelle CATIA V5 par le Club Robotech.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#primary",
+    "icons": [
+        {
+            "src": "/assets/logo-robotech.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/logo-robotech.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
