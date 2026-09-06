@@ -55,7 +55,7 @@ export function RegistrationForm() {
             phone: "",
             studyLevel: "",
             studyField: "",
-            status: "membre",
+            status: "externe_nouveau",
         },
     });
 
@@ -240,8 +240,8 @@ export function RegistrationForm() {
                                                 </FormLabel>
                                             </div>
                                             <div className="flex items-center self-end sm:self-auto">
-                                                <span className="px-3 py-1 bg-secondary text-secondary-foreground text-[10px] font-black uppercase tracking-widest rounded-lg glow-secondary">
-                                                    10 DH
+                                                <span className="px-3 py-1 bg-muted-foreground/10 text-muted-foreground text-[10px] font-black uppercase tracking-widest rounded-lg border border-muted-foreground/20">
+                                                    Gratuit
                                                 </span>
                                             </div>
                                         </FormItem>
@@ -268,16 +268,21 @@ export function RegistrationForm() {
                         )}
                     />
 
-                    <Button type="submit" className="w-full text-base py-6 glow-primary" disabled={isSubmitting}>
-                        {isSubmitting ? (
-                            <>
-                                <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                                Envoi en cours...
-                            </>
-                        ) : (
-                            "S'inscrire à la formation"
-                        )}
-                    </Button>
+                    <div className="space-y-4 pt-4">
+                        <p className="text-center text-sm text-muted-foreground animate-pulse">
+                            ⚠️ Veuillez vérifier vos informations avant de vous inscrire.
+                        </p>
+                        <Button type="submit" className="w-full text-base py-6 glow-primary" disabled={isSubmitting}>
+                            {isSubmitting ? (
+                                <>
+                                    <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                                    Envoi en cours...
+                                </>
+                            ) : (
+                                "S'inscrire à la formation"
+                            )}
+                        </Button>
+                    </div>
                 </form>
             </Form>
         </div>

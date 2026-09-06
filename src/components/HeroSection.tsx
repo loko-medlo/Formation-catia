@@ -24,7 +24,7 @@ const HeroSection = () => {
           </span>
           <span className="inline-flex items-center gap-2 rounded-full border border-destructive/40 bg-destructive/10 px-5 py-2 text-sm font-bold text-destructive animate-pulse-glow">
             <span className="h-2 w-2 rounded-full bg-destructive animate-ping" />
-            9 places restantes
+            20 places restantes
           </span>
         </motion.div>
 
@@ -36,7 +36,7 @@ const HeroSection = () => {
         >
           Maîtrisez <span className="text-gradient-primary">CATIA V5</span>
           <br />
-          <span className="text-gradient-secondary">Session 2 : Niveau Avancé</span>
+          <span className="text-gradient-secondary">Session 2 : Booster sa Conception</span>
         </motion.h1>
 
         <motion.p

@@ -9,7 +9,7 @@ import {
 const faqs = [
     {
         question: "J'ai déjà assisté à la 1ère séance, dois-je payer 20 DH ?",
-        answer: "Non. Pour ceux qui ont déjà participé à la séance 1, les frais de participation pour la séance 2 sont de seulement 10 DH.",
+        answer: "Non. Pour ceux qui ont déjà participé à la séance 1, la séance 2 est gratuite.",
     },
     {
         question: "C'est ma toute première séance, est-ce un problème ?",

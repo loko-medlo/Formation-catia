@@ -1,0 +1,2527 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROBOTECH FSTT — Promo 2026/2027 · Inscription Membres</title>
+  <meta name="description" content="Rejoins la promotion ROBOTECH FSTT 2026/2027. Inscris-toi comme membre de la communauté technologique et étudiante qui construit, programme et innove ensemble." />
+  <meta name="author" content="Club Robotech" />
+  <meta name="theme-color" content="#0e1115" />
+
+  <meta property="og:title" content="ROBOTECH FSTT — Promo 2026/2027" />
+  <meta property="og:description" content="Construisons, programmons et innovons ensemble. Inscris-toi à la promo 2026/2027 du Club Robotech." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="public/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="public/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #0e1115;
+      --bg-2: #101725;
+      --card: #15181e;
+      --card-2: #191e27;
+      --primary: #1a8cff;
+      --primary-2: #0099e6;
+      --secondary: #ff751a;
+      --secondary-2: #ff6a00;
+      --text: #e8eef3;
+      --muted: #7b899d;
+      --border: #272c35;
+      --border-soft: rgba(255, 255, 255, 0.08);
+      --danger: #ff4d5e;
+      --success: #2fd47f;
+      --radius: 16px;
+      --shadow-glow-primary: 0 0 30px -5px rgba(26, 140, 255, 0.45);
+      --shadow-glow-secondary: 0 0 30px -5px rgba(255, 117, 26, 0.45);
+      --gradient-primary: linear-gradient(135deg, #1a8cff, #0099e6);
+      --gradient-secondary: linear-gradient(135deg, #ff751a, #ff6a00);
+      --font-heading: "Orbitron", sans-serif;
+      --font-body: "Inter", sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: var(--font-heading);
+      line-height: 1.15;
+      letter-spacing: 0.01em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: inherit;
+    }
+
+    input, select, textarea {
+      font-family: inherit;
+      font-size: 1rem;
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    section[id] {
+      scroll-margin-top: 88px;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    ::selection {
+      background: rgba(26, 140, 255, 0.35);
+    }
+
+    .skip-link {
+      position: fixed;
+      top: -60px;
+      left: 16px;
+      z-index: 200;
+      background: var(--primary);
+      color: #04121f;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 10px;
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus {
+      top: 12px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin-inline: auto;
+      padding-inline: 24px;
+    }
+
+    .text-gradient-primary {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+
+    .text-gradient-secondary {
+      background: var(--gradient-secondary);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+
+    .bg-grid {
+      background-image:
+        linear-gradient(rgba(39, 44, 53, 0.4) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(39, 44, 53, 0.4) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-soft);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .glow-primary {
+      box-shadow: var(--shadow-glow-primary);
+    }
+    .glow-secondary {
+      box-shadow: var(--shadow-glow-secondary);
+    }
+
+    /* ---------- Header / Nav ---------- */
+    .header {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 100;
+      transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      border-bottom: 1px solid transparent;
+    }
+    .header.scrolled {
+      background: rgba(14, 17, 21, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom-color: var(--border-soft);
+      box-shadow: 0 8px 30px -18px rgba(0, 0, 0, 0.7);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding-block: 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .brand-name {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
+    }
+    .brand-name span {
+      color: var(--primary);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--muted);
+      transition: color 0.2s ease;
+      position: relative;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text);
+    }
+    .nav-links a.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -7px;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--gradient-primary);
+    }
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gradient-primary);
+      color: #04121f;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 9px 18px;
+      border-radius: 999px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-glow-primary);
+    }
+    .nav-burger {
+      display: none;
+      padding: 8px;
+      border-radius: 10px;
+      border: 1px solid var(--border-soft);
+    }
+    .nav-burger svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--text);
+    }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      background: rgba(14, 17, 21, 0.96);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      padding: 96px 28px 32px;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .mobile-menu.open {
+      display: flex;
+    }
+    .mobile-menu a {
+      padding: 14px 4px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border-soft);
+      color: var(--text);
+    }
+    .mobile-menu .nav-cta {
+      margin-top: 20px;
+      justify-content: center;
+      padding: 14px;
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding-top: 90px;
+      padding-bottom: 60px;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+    }
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.32;
+    }
+    .hero-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(140% 100% at 50% 0%, transparent 40%, rgba(14, 17, 21, 0.65) 100%),
+        linear-gradient(180deg, rgba(14, 17, 21, 0.55) 0%, rgba(14, 17, 21, 0.5) 50%, var(--bg) 100%);
+    }
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      opacity: 0.5;
+    }
+    .hero-orbs {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    .orb-1 {
+      width: 420px;
+      height: 420px;
+      background: rgba(26, 140, 255, 0.35);
+      top: 8%;
+      left: -120px;
+      animation: drift 14s ease-in-out infinite;
+    }
+    .orb-2 {
+      width: 380px;
+      height: 380px;
+      background: rgba(255, 117, 26, 0.25);
+      bottom: 4%;
+      right: -110px;
+      animation: drift 18s ease-in-out infinite reverse;
+    }
+    .hero-particles {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .particle {
+      position: absolute;
+      bottom: -12px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(26, 140, 255, 0.9), rgba(153, 206, 255, 0.5));
+      box-shadow: 0 0 10px rgba(26, 140, 255, 0.6);
+      animation: rise linear infinite;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 900px;
+      padding-inline: 24px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(26, 140, 255, 0.4);
+      background: rgba(26, 140, 255, 0.08);
+      color: #7ec3ff;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 28px;
+    }
+    .hero-badge .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .hero h1 {
+      font-size: clamp(2.6rem, 8vw, 5.6rem);
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      margin-bottom: 16px;
+    }
+    .hero-promo {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: clamp(1.05rem, 3vw, 1.6rem);
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      background: var(--gradient-secondary);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      margin-bottom: 26px;
+    }
+    .hero-promo::before,
+    .hero-promo::after {
+      content: "—";
+      margin-inline: 10px;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0.25);
+      color: rgba(255, 255, 255, 0.25);
+    }
+    .hero p.tagline {
+      font-size: clamp(1rem, 2.4vw, 1.25rem);
+      color: var(--muted);
+      max-width: 680px;
+      margin-inline: auto;
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+    .hero p.tagline strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 30px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 0.98rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+    .btn-primary {
+      background: var(--gradient-primary);
+      color: #04121f;
+      box-shadow: var(--shadow-glow-primary);
+    }
+    .btn-primary:hover {
+      box-shadow: 0 0 46px -6px rgba(26, 140, 255, 0.7);
+    }
+    .btn-ghost {
+      border: 1px solid var(--border-soft);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+    }
+    .btn-ghost:hover {
+      border-color: rgba(26, 140, 255, 0.5);
+    }
+    .hero-scroll {
+      position: absolute;
+      bottom: 26px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      color: var(--muted);
+      animation: float 2.6s ease-in-out infinite;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .hero-scroll svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--primary);
+    }
+
+    /* ---------- Sections generiques ---------- */
+    .section {
+      position: relative;
+      padding-block: 96px;
+      overflow: hidden;
+    }
+    .section-alt {
+      background: var(--bg-2);
+    }
+    .section-head {
+      text-align: center;
+      max-width: 720px;
+      margin-inline: auto;
+      margin-bottom: 56px;
+    }
+    .section-head .kicker {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 14px;
+    }
+    .section-head h2 {
+      font-size: clamp(1.7rem, 4.6vw, 2.8rem);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .section-head p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .top-line {
+      position: absolute;
+      inset-inline: 0;
+      top: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+    }
+
+    /* ---------- Club ---------- */
+    .club-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 56px;
+      align-items: center;
+    }
+    .club-copy h2 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      margin-bottom: 22px;
+    }
+    .club-copy > p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .club-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .club-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      background: rgba(255, 255, 255, 0.03);
+      font-size: 0.83rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .club-tag svg {
+      width: 15px;
+      height: 15px;
+      stroke: var(--primary);
+    }
+    .club-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .stat-card {
+      text-align: center;
+      padding: 26px 16px;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--border-soft);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .stat-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(26, 140, 255, 0.4);
+      box-shadow: var(--shadow-glow-primary);
+    }
+    .stat-card .num {
+      font-family: var(--font-heading);
+      font-size: 1.9rem;
+      font-weight: 800;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      margin-bottom: 6px;
+    }
+    .stat-card:last-child .num {
+      background: var(--gradient-secondary);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+    .stat-card .lbl {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    /* ---------- Pourquoi ---------- */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .feature-card {
+      padding: 30px 24px;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--border-soft);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card::before {
+      content: "";
+      position: absolute;
+      inset-inline: 0;
+      top: 0;
+      height: 2px;
+      background: var(--gradient-primary);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    .feature-card:nth-child(even)::before {
+      background: var(--gradient-secondary);
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(26, 140, 255, 0.35);
+      box-shadow: var(--shadow-glow-primary);
+    }
+    .feature-card:hover::before {
+      opacity: 1;
+    }
+    .feature-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(26, 140, 255, 0.1);
+      border: 1px solid rgba(26, 140, 255, 0.25);
+      margin-bottom: 18px;
+    }
+    .feature-card:nth-child(even) .feature-icon {
+      background: rgba(255, 117, 26, 0.1);
+      border-color: rgba(255, 117, 26, 0.25);
+    }
+    .feature-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--primary);
+    }
+    .feature-card:nth-child(even) .feature-icon svg {
+      stroke: var(--secondary);
+    }
+    .feature-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .feature-card p {
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    /* ---------- Communaute / Galerie ---------- */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: clamp(220px, 32vw, 320px);
+      gap: 18px;
+    }
+    .gallery-card {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border-soft);
+      grid-column: span 6;
+      cursor: default;
+    }
+    .gallery-card:nth-child(4n+1) { grid-column: span 5; }
+    .gallery-card:nth-child(4n+2) { grid-column: span 7; }
+    .gallery-card:nth-child(4n+3) { grid-column: span 7; }
+    .gallery-card:nth-child(4n+4) { grid-column: span 5; }
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1);
+    }
+    .gallery-card:hover img {
+      transform: scale(1.06);
+    }
+    .gallery-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(14, 17, 21, 0.85) 0%, rgba(14, 17, 21, 0.15) 55%, transparent 100%);
+      pointer-events: none;
+    }
+    .gallery-cap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 22px;
+      z-index: 2;
+    }
+    .gallery-cap .eyebrow {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: 6px;
+    }
+    .gallery-cap h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    /* ---------- Deroulement ---------- */
+    .steps-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      counter-reset: step;
+    }
+    .step-item {
+      position: relative;
+      padding: 30px 24px 28px;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--border-soft);
+    }
+    .step-num {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: transparent;
+      -webkit-text-stroke: 1.5px var(--primary);
+      margin-bottom: 14px;
+    }
+    .step-item:nth-child(2) .step-num {
+      -webkit-text-stroke-color: var(--secondary);
+    }
+    .step-item h3 {
+      font-size: 1.02rem;
+      margin-bottom: 8px;
+    }
+    .step-item p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* ---------- Formulaire ---------- */
+    .form-section {
+      background:
+        radial-gradient(1200px 500px at 85% -10%, rgba(255, 117, 26, 0.08), transparent 60%),
+        radial-gradient(1200px 500px at 10% 110%, rgba(26, 140, 255, 0.1), transparent 60%),
+        var(--bg-2);
+    }
+    .form-card {
+      max-width: 860px;
+      margin-inline: auto;
+      border-radius: 22px;
+      background: var(--card);
+      border: 1px solid var(--border-soft);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 30px 80px -40px rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+    }
+    .form-card-top {
+      padding: 30px 32px 22px;
+      border-bottom: 1px solid var(--border-soft);
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .form-card-top h2 {
+      font-size: clamp(1.3rem, 3vw, 1.7rem);
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .form-card-top p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .steps-progress {
+      padding: 20px 32px 0;
+    }
+    .progress-track {
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      overflow: hidden;
+      margin-bottom: 18px;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 25%;
+      border-radius: 999px;
+      background: var(--gradient-primary);
+      transition: width 0.45s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .steps-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+    .steps-indicator::before {
+      content: "";
+      position: absolute;
+      left: 12.5%;
+      right: 12.5%;
+      top: 18px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .step-bullet {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 9px;
+      flex: 1;
+    }
+    .step-circle {
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      border: 2px solid rgba(255, 255, 255, 0.14);
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--muted);
+      transition: all 0.3s ease;
+    }
+    .step-circle svg {
+      width: 17px;
+      height: 17px;
+      stroke: #04121f;
+      stroke-width: 3;
+    }
+    .step-bullet .step-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      transition: color 0.3s ease;
+      text-align: center;
+    }
+    .step-bullet.done .step-circle {
+      background: var(--gradient-primary);
+      border-color: transparent;
+      color: #04121f;
+      box-shadow: var(--shadow-glow-primary);
+    }
+    .step-bullet.active .step-circle {
+      border-color: var(--primary);
+      color: var(--primary);
+      box-shadow: 0 0 0 5px rgba(26, 140, 255, 0.12);
+    }
+    .step-bullet.active .step-label {
+      color: var(--text);
+    }
+
+    .form-body {
+      padding: 28px 32px 32px;
+    }
+    .step {
+      display: none;
+    }
+    .step.active {
+      display: block;
+      animation: slideIn 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+    .step-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .step-sub {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .field-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .field {
+      margin-bottom: 20px;
+    }
+    .field label.field-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .field label.field-label .req {
+      color: var(--secondary);
+    }
+    .input-wrap {
+      position: relative;
+    }
+    .input-wrap > svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      stroke: var(--muted);
+      pointer-events: none;
+      transition: stroke 0.2s ease;
+    }
+    .input-wrap input {
+      width: 100%;
+      padding: 13px 16px 13px 46px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid var(--border);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+    .input-wrap input::placeholder {
+      color: rgba(123, 137, 157, 0.65);
+    }
+    .input-wrap input:focus {
+      outline: none;
+      border-color: var(--primary);
+      background: rgba(26, 140, 255, 0.05);
+      box-shadow: 0 0 0 4px rgba(26, 140, 255, 0.12);
+    }
+    .field.invalid .input-wrap input {
+      border-color: var(--danger);
+      box-shadow: 0 0 0 4px rgba(255, 77, 94, 0.12);
+    }
+    .err-msg {
+      display: none;
+      font-size: 0.8rem;
+      color: var(--danger);
+      margin-top: 7px;
+    }
+    .field.invalid .err-msg {
+      display: block;
+    }
+    .hint {
+      font-size: 0.76rem;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    /* radio cards */
+    fieldset.choice-group {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    fieldset.choice-group legend {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      padding: 0;
+    }
+    .radio-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .radio-card-label {
+      position: relative;
+      display: block;
+      cursor: pointer;
+    }
+    .radio-card-label input {
+      position: absolute;
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+    }
+    .radio-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      transition: all 0.25s ease;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .radio-card .r-dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid var(--muted);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
+    .radio-card .r-dot::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #04121f;
+      transform: scale(0);
+      transition: transform 0.2s ease;
+    }
+    .radio-card-label:hover .radio-card {
+      border-color: rgba(26, 140, 255, 0.4);
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .radio-card-label input:focus-visible + .radio-card {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+    .radio-card-label input:checked + .radio-card {
+      border-color: var(--primary);
+      background: rgba(26, 140, 255, 0.1);
+      box-shadow: var(--shadow-glow-primary);
+    }
+    .radio-card-label input:checked + .radio-card .r-dot {
+      border-color: var(--primary);
+      background: var(--primary);
+    }
+    .radio-card-label input:checked + .radio-card .r-dot::after {
+      transform: scale(1);
+    }
+    .field.invalid .radio-cards .radio-card {
+      border-color: rgba(255, 77, 94, 0.6);
+    }
+
+    /* chips centres d'interet */
+    .chip-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.03);
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: all 0.2s ease;
+    }
+    .chip svg {
+      width: 15px;
+      height: 15px;
+      stroke: var(--muted);
+      transition: all 0.2s ease;
+    }
+    .chip:hover {
+      border-color: rgba(26, 140, 255, 0.5);
+      background: rgba(26, 140, 255, 0.06);
+    }
+    .chip[aria-pressed="true"] {
+      border-color: var(--primary);
+      background: rgba(26, 140, 255, 0.14);
+      box-shadow: var(--shadow-glow-primary);
+      font-weight: 700;
+    }
+    .chip[aria-pressed="true"] svg {
+      stroke: var(--primary);
+    }
+    .chip-other-wrap {
+      display: none;
+    }
+    .chip-other-wrap.open {
+      display: block;
+    }
+    .chip-other-wrap input {
+      width: 100%;
+      max-width: 380px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid var(--border);
+      margin-top: 4px;
+    }
+    .chip-other-wrap input:focus {
+      outline: none;
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 4px rgba(255, 117, 26, 0.12);
+    }
+
+    /* nav form */
+    .form-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-top: 8px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border-soft);
+    }
+    .form-nav .btn {
+      min-width: 150px;
+    }
+    .btn-back {
+      border: 1px solid var(--border-soft);
+      background: transparent;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .btn-back:hover {
+      color: var(--text);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateX(-2px);
+    }
+    .btn-next {
+      margin-left: auto;
+    }
+    .btn-submit {
+      background: var(--gradient-primary);
+      color: #04121f;
+      box-shadow: var(--shadow-glow-primary);
+      position: relative;
+    }
+    .btn-submit:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 2.5px solid rgba(4, 18, 31, 0.3);
+      border-top-color: #04121f;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: inline-block;
+    }
+    .form-alert {
+      display: none;
+      margin-bottom: 18px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #ffd7db;
+      background: rgba(255, 77, 94, 0.1);
+      border: 1px solid rgba(255, 77, 94, 0.35);
+    }
+    .form-alert.show {
+      display: block;
+      animation: slideIn 0.3s ease;
+    }
+
+    /* summary */
+    .summary-list {
+      display: grid;
+      gap: 12px;
+    }
+    .summary-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 13px 16px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-soft);
+    }
+    .summary-row .k {
+      flex-shrink: 0;
+      width: 170px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding-top: 2px;
+    }
+    .summary-row .v {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .summary-note {
+      margin-top: 18px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      background: rgba(255, 117, 26, 0.07);
+      border: 1px solid rgba(255, 117, 26, 0.25);
+      color: #ffd9bd;
+      font-size: 0.86rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .summary-note svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--secondary);
+      flex-shrink: 0;
+    }
+
+    /* success */
+    .success-panel {
+      display: none;
+      text-align: center;
+      padding: 54px 32px 48px;
+    }
+    .success-panel.show {
+      display: block;
+      animation: fadeUp 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+    .success-check {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 26px;
+      position: relative;
+    }
+    .success-check svg {
+      width: 100%;
+      height: 100%;
+    }
+    .success-check .ring {
+      fill: none;
+      stroke: var(--primary);
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-dasharray: 260;
+      stroke-dashoffset: 260;
+      animation: drawRing 0.8s ease forwards;
+    }
+    .success-check .mark {
+      fill: none;
+      stroke: var(--success);
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 70;
+      stroke-dashoffset: 70;
+      animation: drawRing 0.5s ease 0.6s forwards;
+    }
+    .success-panel h2 {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .success-panel h2 span {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+    .success-panel p {
+      color: var(--muted);
+      max-width: 460px;
+      margin-inline: auto;
+      margin-bottom: 30px;
+    }
+    .confetti-box {
+      position: relative;
+      height: 0;
+    }
+    .confetti {
+      position: absolute;
+      top: -40px;
+      width: 8px;
+      height: 14px;
+      border-radius: 2px;
+      opacity: 0;
+      animation: confettiFall 2.6s ease-in forwards;
+    }
+    .btn-reset {
+      border: 1px solid var(--border-soft);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text);
+    }
+    .btn-reset:hover {
+      border-color: rgba(26, 140, 255, 0.5);
+    }
+
+    /* ---------- Footer ---------- */
+    .footer {
+      border-top: 1px solid var(--border-soft);
+      padding-block: 44px;
+      text-align: center;
+      background: var(--bg);
+    }
+    .footer .brand {
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .footer p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .footer a.contact-link {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .footer a.contact-link:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- Reveal ---------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+    .reveal.in-view {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ---------- Keyframes ---------- */
+    @keyframes drift {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(40px, -30px); }
+    }
+    @keyframes rise {
+      0% { transform: translateY(0) translateX(0); opacity: 0; }
+      10% { opacity: 0.7; }
+      90% { opacity: 0.4; }
+      100% { transform: translateY(-110vh) translateX(30px); opacity: 0; }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.45; }
+    }
+    @keyframes float {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, -8px); }
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(24px); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes drawRing {
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes confettiFall {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(340px) rotate(720deg); opacity: 0; }
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1024px) {
+      .nav-links { display: none; }
+      .nav-cta-desktop { display: none; }
+      .nav-burger { display: block; }
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .club-grid { grid-template-columns: 1fr; gap: 40px; }
+      .gallery-card,
+      .gallery-card:nth-child(n) { grid-column: span 6; }
+    }
+
+    @media (max-width: 768px) {
+      .section { padding-block: 72px; }
+      .steps-row { grid-template-columns: 1fr; }
+      .field-grid { grid-template-columns: 1fr; }
+      .club-stats { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+      .stat-card { padding: 20px 10px; }
+      .form-body { padding: 22px 20px 26px; }
+      .steps-progress { padding-inline: 20px; }
+      .form-card-top { padding: 24px 20px 18px; }
+      .summary-row { flex-direction: column; gap: 4px; }
+      .summary-row .k { width: auto; }
+    }
+
+    @media (max-width: 520px) {
+      .features-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-auto-rows: 230px; }
+      .gallery-card,
+      .gallery-card:nth-child(n) { grid-column: span 12; }
+      .radio-cards { grid-template-columns: 1fr; }
+      .step-bullet .step-label { font-size: 0.62rem; }
+      .step-circle { width: 34px; height: 34px; }
+      .form-nav { flex-wrap: wrap; }
+      .form-nav .btn { min-width: 0; flex: 1; }
+      .btn-back { order: 1; }
+      .btn-next, .btn-submit { order: 2; }
+      .hero-actions .btn { width: 100%; max-width: 340px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.001s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001s !important;
+      }
+      .hero-scroll { animation: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#inscription">Aller au formulaire d'inscription</a>
+
+  <!-- ======= HEADER ======= -->
+  <header class="header" id="header">
+    <div class="container nav-inner">
+      <a href="#accueil" class="brand" aria-label="ROBOTECH FSTT — retour à l'accueil">
+        <img src="src/assets/logo-robotech.png" alt="Logo ROBOTECH" />
+        <span class="brand-name">ROBO<span>TECH</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#club" data-link="club">Le club</a></li>
+        <li><a href="#pourquoi" data-link="pourquoi">Pourquoi rejoindre</a></li>
+        <li><a href="#communaute" data-link="communaute">Notre communauté</a></li>
+        <li><a href="#inscription" data-link="inscription">Inscription</a></li>
+      </ul>
+
+      <a href="#inscription" class="nav-cta nav-cta-desktop">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><path d="M12 20V4"/><path d="m6 10 6-6 6 6"/></svg>
+        Rejoindre la promo
+      </a>
+
+      <button class="nav-burger" id="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Navigation mobile">
+    <a href="#club" data-link="club">Le club</a>
+    <a href="#pourquoi" data-link="pourquoi">Pourquoi rejoindre</a>
+    <a href="#communaute" data-link="communaute">Notre communauté</a>
+    <a href="#inscription" data-link="inscription">Inscription</a>
+    <a href="#inscription" class="nav-cta">Rejoindre la promo 2026/2027</a>
+  </nav>
+
+  <main>
+    <!-- ======= HERO ======= -->
+    <section class="hero" id="accueil">
+      <div class="hero-bg">
+        <img src="src/assets/hero-bg.jpg" alt="" aria-hidden="true" />
+      </div>
+      <div class="hero-grid bg-grid" aria-hidden="true"></div>
+      <div class="hero-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+      </div>
+      <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <span class="hero-badge"><span class="dot"></span> FSTT — Tanger / Inscriptions ouvertes</span>
+        <h1>ROBO<span class="text-gradient-primary">TECH</span></h1>
+        <span class="hero-promo">Promo 2026 / 2027</span>
+        <p class="tagline">
+          Construisons, programmons et innovons <strong>ensemble</strong>.
+          Tu es passionné par la technologie, la robotique ou l'innovation ?
+          La promotion 2026/2027 se construit maintenant — <strong>fais-en partie</strong>.
+        </p>
+        <div class="hero-actions">
+          <a href="#inscription" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="19" height="19" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg>
+            Rejoindre ROBOTECH
+          </a>
+          <a href="#club" class="btn btn-ghost">Découvrir le club</a>
+        </div>
+      </div>
+
+      <a href="#club" class="hero-scroll">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+        Découvrir
+      </a>
+    </section>
+
+    <!-- ======= CLUB ======= -->
+    <section class="section section-alt" id="club">
+      <div class="top-line" aria-hidden="true"></div>
+      <div class="container">
+        <div class="club-grid">
+          <div class="club-copy reveal">
+            <span class="kicker">Qui sommes-nous</span>
+            <h2>Une communauté qui vit la <span class="text-gradient-primary">technologie</span></h2>
+            <p>
+              <strong>ROBOTECH</strong> est un club scientifique et technologique de la <strong>FSTT</strong> qui rassemble
+              des étudiants passionnés et curieux. À travers nos séances de formation, nos projets techniques et nos
+              moments de partage, nous construisons une vraie communauté : celle d'étudiants qui apprennent ensemble,
+              se tirent vers le haut et laissent des bons souvenirs.
+            </p>
+            <p>
+              La promotion 2026/2027 est l'occasion de prendre part à cette aventure dès le départ :
+              intègre le groupe, participe aux activités du club, développe tes compétences et rencontre
+              d'autres étudiants qui partagent ta passion.
+            </p>
+            <div class="club-tags" aria-hidden="true">
+              <span class="club-tag"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2"/><path d="M15 2v2"/><path d="M9 20v2"/><path d="M15 20v2"/></svg> Innovation</span>
+              <span class="club-tag"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><circle cx="12" cy="12" r="3"/><path d="M12 2v7"/><path d="M12 15v7"/></svg> Robotique</span>
+              <span class="club-tag"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Programmation</span>
+              <span class="club-tag"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> CAO / Conception</span>
+              <span class="club-tag"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 12-4 4H6l-4-4 4-4h12l4 4z"/><path d="M7 8V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg> Électronique</span>
+            </div>
+          </div>
+
+          <div class="club-stats reveal">
+            <div class="stat-card">
+              <div class="num">+100</div>
+              <div class="lbl">Membres réunis au fil des anciennes promotions</div>
+            </div>
+            <div class="stat-card">
+              <div class="num">CAO 3D</div>
+              <div class="lbl">Formations pratiques autour de la conception technique</div>
+            </div>
+            <div class="stat-card">
+              <div class="num">∞</div>
+              <div class="lbl">Passion, entraide et bons souvenirs à partager</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= POURQUOI ======= -->
+    <section class="section" id="pourquoi">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Pourquoi rejoindre</span>
+          <h2>Rejoindre ROBOTECH, c'est <span class="text-gradient-secondary">avancer ensemble</span></h2>
+          <p>Plus qu'un club, une communauté où chaque membre contribue, apprend et grandit.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+            <h3>Projets &amp; défis techniques</h3>
+            <p>Passe des idées aux réalisations en participant aux projets techniques imaginés par le club, de la conception jusqu'aux prototypes.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+            <h3>Compétences &amp; formations</h3>
+            <p>Profite de séances pratiques de formation (CAO, conception 3D et bien plus) pour te préparer aux outils utilisés en industrie.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3>Esprit d'équipe</h3>
+            <p>Travaille en équipe, partage tes idées et apprends des autres membres dans une ambiance soudée, bienveillante et motivante.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98"/><path d="m15.41 6.51-6.82 3.98"/></svg></div>
+            <h3>Réseau &amp; rencontres</h3>
+            <p>Rencontre des étudiants de toutes les filières de la FSTT, élargis ton réseau et construis des liens qui durent bien au-delà des études.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M16.5 3H7.5a2 2 0 0 0-2 2v9a5 5 0 0 0 5 5h3a5 5 0 0 0 5-5V5a2 2 0 0 0-2-2z"/><path d="M9 7h6"/><path d="M9 11h6"/></svg></div>
+            <h3>Innovation &amp; technologie</h3>
+            <p>Explore les nouvelles technologies, expérimente et développe ta créativité au contact de passionnés qui veulent comprendre comment ça marche.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18l-2 9H5l-2-9z"/><path d="M12 3c2 0 3 1.5 3 3 0 2-3 3-3 5 0-2-3-3-3-5 0-1.5 1-3 3-3z"/><path d="M2 11V8a2 2 0 0 1 2-2h3"/><path d="M22 11V8a2 2 0 0 0-2-2h-3"/></svg></div>
+            <h3>Vie du club &amp; événements</h3>
+            <p>Vis la vie du club : séances de travail, temps forts, moments de convivialité et de bons souvenirs partagés avec la communauté.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= COMMUNAUTE ======= -->
+    <section class="section section-alt" id="communaute">
+      <div class="top-line" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">En images</span>
+          <h2>Notre <span class="text-gradient-primary">communauté</span></h2>
+          <p>Retour en images sur les moments forts du club : une séance mémorable et des souvenirs partagés.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/img1.webp" alt="Photo de la séance ROBOTECH — moment de convivialité" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Session · Séance 1</div>
+              <h3>La communauté en action</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/img2.webp" alt="Photo de la séance ROBOTECH — les membres réunis" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Session · Séance 1</div>
+              <h3>Plus de 100 membres au fil des promos</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/img3.webp" alt="Photo de la séance ROBOTECH — échanges et partage" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>Des échanges qui font avancer</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/img4.webp" alt="Photo de la séance ROBOTECH — ambiance du club" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>L'esprit ROBOTECH</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/IMG_4824.webp" alt="Photo ROBOTECH — bon souvenir" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>Moments de partage</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/IMG_4877.webp" alt="Photo ROBOTECH — bon souvenir" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>La famille ROBOTECH</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/IMG_4904.webp" alt="Photo ROBOTECH — bon souvenir" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>Toujours en bonne compagnie</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/IMG_4906.webp" alt="Photo ROBOTECH — bon souvenir" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>Une promo, une équipe</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/IMG_4911.webp" alt="Photo ROBOTECH — bon souvenir" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>La bonne humeur du club</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/IMG_4912.webp" alt="Photo ROBOTECH — bon souvenir" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>Souvenirs partagés</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/IMG_5030.webp" alt="Photo ROBOTECH — bon souvenir" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>Notre communauté</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/IMG_5147.webp" alt="Photo ROBOTECH — bon souvenir" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>Vivre le club</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/IMG_5162.webp" alt="Photo ROBOTECH — bon souvenir" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>L'aventure continue</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/IMG_5167.webp" alt="Photo ROBOTECH — bon souvenir" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>Entre membres</h3>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <img src="robotech-2026-assets/IMG_5229.webp" alt="Photo ROBOTECH — bon souvenir" loading="lazy" />
+            <figcaption class="gallery-cap">
+              <div class="eyebrow">Bon souvenir</div>
+              <h3>De bons souvenirs</h3>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= DEROULEMENT ======= -->
+    <section class="section" id="deroulement">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Ça se passe comment ?</span>
+          <h2>Trois étapes pour <span class="text-gradient-secondary">rejoindre la promo</span></h2>
+        </div>
+        <div class="steps-row">
+          <div class="step-item reveal">
+            <div class="step-num">01</div>
+            <h3>Inscris-toi</h3>
+            <p>Remplis le formulaire d'inscription en quelques minutes. C'est rapide, simple et gratuit.</p>
+          </div>
+          <div class="step-item reveal">
+            <div class="step-num">02</div>
+            <h3>Reçois la confirmation</h3>
+            <p>Ton inscription est enregistrée et tu reçois ta confirmation de bienvenue dans la communauté.</p>
+          </div>
+          <div class="step-item reveal">
+            <div class="step-num">03</div>
+            <h3>Vis l'aventure</h3>
+            <p>Intègre le groupe, participe aux séances et aux projets, et construis la promo 2026/2027 avec nous.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= INSCRIPTION ======= -->
+    <section class="section form-section" id="inscription" aria-labelledby="form-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Campagne 2026/2027</span>
+          <h2>Inscription <span class="text-gradient-primary">membre</span></h2>
+          <p>Forme ton futur, rejoins la communauté. Le formulaire ne prend que quelques minutes.</p>
+        </div>
+
+        <div class="form-card reveal" id="form-card">
+          <div id="form-root">
+            <div class="form-card-top">
+              <h2 id="form-title">Inscription — Promo 2026/2027</h2>
+              <p>Renseigne tes informations pour devenir membre de ROBOTECH FSTT.</p>
+            </div>
+
+            <div class="steps-progress" aria-hidden="true">
+              <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+              <div class="steps-indicator">
+                <div class="step-bullet active" data-bullet="0">
+                  <div class="step-circle" id="bullet-0">1</div>
+                  <span class="step-label">Identité</span>
+                </div>
+                <div class="step-bullet" data-bullet="1">
+                  <div class="step-circle" id="bullet-1">2</div>
+                  <span class="step-label">Contact &amp; études</span>
+                </div>
+                <div class="step-bullet" data-bullet="2">
+                  <div class="step-circle" id="bullet-2">3</div>
+                  <span class="step-label">Expérience &amp; intérêts</span>
+                </div>
+                <div class="step-bullet" data-bullet="3">
+                  <div class="step-circle" id="bullet-3">4</div>
+                  <span class="step-label">Confirmation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-body">
+              <div class="form-alert" id="form-alert" role="alert" aria-live="assertive"></div>
+
+              <form id="register-form" novalidate>
+                <!-- STEP 1 : Identité -->
+                <div class="step active" data-step="0" role="group" aria-labelledby="step-title-0">
+                  <h3 class="step-title" id="step-title-0">Faisons connaissance</h3>
+                  <p class="step-sub">Comment t'appelles-tu ?</p>
+                  <div class="field" data-field="nom">
+                    <label class="field-label" for="nom">Nom <span class="req" aria-hidden="true">*</span></label>
+                    <div class="input-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                      <input type="text" id="nom" name="nom" autocomplete="family-name" placeholder="Ex : ALAMI" required aria-required="true" />
+                    </div>
+                    <p class="err-msg" id="err-nom"></p>
+                  </div>
+                  <div class="field" data-field="prenom">
+                    <label class="field-label" for="prenom">Prénom <span class="req" aria-hidden="true">*</span></label>
+                    <div class="input-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                      <input type="text" id="prenom" name="prenom" autocomplete="given-name" placeholder="Ex : Yassine" required aria-required="true" />
+                    </div>
+                    <p class="err-msg" id="err-prenom"></p>
+                  </div>
+                </div>
+
+                <!-- STEP 2 : Contact & études -->
+                <div class="step" data-step="1" role="group" aria-labelledby="step-title-1">
+                  <h3 class="step-title" id="step-title-1">Contact &amp; parcours universitaire</h3>
+                  <p class="step-sub">Tes coordonnées et ton parcours à la FSTT.</p>
+
+                  <div class="field-grid">
+                    <div class="field" data-field="numero">
+                      <label class="field-label" for="numero">Numéro de téléphone <span class="req" aria-hidden="true">*</span></label>
+                      <div class="input-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <input type="tel" id="numero" name="numero" inputmode="tel" autocomplete="tel" placeholder="06 12 34 56 78" required aria-required="true" />
+                      </div>
+                      <p class="hint">Numéro marocain (WhatsApp de préférence).</p>
+                      <p class="err-msg" id="err-numero"></p>
+                    </div>
+
+                    <div class="field" data-field="email">
+                      <label class="field-label" for="email">Email <span class="req" aria-hidden="true">*</span></label>
+                      <div class="input-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="toi@exemple.com" required aria-required="true" />
+                      </div>
+                      <p class="err-msg" id="err-email"></p>
+                    </div>
+
+                    <div class="field" data-field="niveau">
+                      <label class="field-label" for="niveau">Niveau d'étude <span class="req" aria-hidden="true">*</span></label>
+                      <div class="input-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6"/><path d="M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        <input type="text" id="niveau" name="niveau" list="niveaux-list" placeholder="Choisis ton niveau" required aria-required="true" />
+                        <datalist id="niveaux-list">
+                          <option value="Bac+1"></option>
+                          <option value="Bac+2"></option>
+                          <option value="Bac+3"></option>
+                          <option value="Bac+4"></option>
+                          <option value="Bac+5"></option>
+                          <option value="Autre"></option>
+                        </datalist>
+                      </div>
+                      <p class="hint">Bac+1 (1ère année), Bac+2 (2ème année), Bac+3, Bac+4, Bac+5...</p>
+                      <p class="err-msg" id="err-niveau"></p>
+                    </div>
+
+                    <div class="field" data-field="filiere">
+                      <label class="field-label" for="filiere">Filière d'étude <span class="req" aria-hidden="true">*</span></label>
+                      <div class="input-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <input type="text" id="filiere" name="filiere" list="filieres-list" placeholder="Ex : Génie Mécanique" required aria-required="true" />
+                        <datalist id="filieres-list">
+                          <option value="Génie Mécanique"></option>
+                          <option value="Génie Industriel"></option>
+                          <option value="Génie Électrique"></option>
+                          <option value="Génie Informatique"></option>
+                          <option value="Génie Civil"></option>
+                          <option value="Génie des Procédés"></option>
+                          <option value="Informatique"></option>
+                          <option value="Mathématiques"></option>
+                          <option value="Physique"></option>
+                          <option value="Chimie"></option>
+                          <option value="Biologie"></option>
+                          <option value="Autre"></option>
+                        </datalist>
+                      </div>
+                      <p class="err-msg" id="err-filiere"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- STEP 3 : Expérience & intérêts -->
+                <div class="step" data-step="2" role="group" aria-labelledby="step-title-2">
+                  <h3 class="step-title" id="step-title-2">Ton expérience ROBOTECH</h3>
+                  <p class="step-sub">Dis-nous en un peu plus sur toi.</p>
+
+                  <fieldset class="choice-group field" data-field="dejaMembre">
+                    <legend>As-tu déjà été membre de ROBOTECH ? <span class="req" aria-hidden="true">*</span></legend>
+                    <div class="radio-cards" role="radiogroup" aria-label="Déjà membre de ROBOTECH">
+                      <label class="radio-card-label">
+                        <input type="radio" name="dejaMembre" value="oui" />
+                        <span class="radio-card"><span class="r-dot" aria-hidden="true"></span> Oui, je connais déjà</span>
+                      </label>
+                      <label class="radio-card-label">
+                        <input type="radio" name="dejaMembre" value="non" />
+                        <span class="radio-card"><span class="r-dot" aria-hidden="true"></span> Non, première fois</span>
+                      </label>
+                    </div>
+                    <p class="err-msg" id="err-dejaMembre"></p>
+                  </fieldset>
+
+                  <fieldset class="choice-group field" data-field="interets">
+                    <legend>Quels sont tes centres d'intérêt ? <span class="req" aria-hidden="true">*</span></legend>
+                    <p class="field-sub" style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">Sélectionne un ou plusieurs domaines qui te motivent.</p>
+                    <div class="chip-grid" id="chip-grid" role="group" aria-label="Centres d'intérêt">
+                      <button type="button" class="chip" data-interest="Robotique" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" x2="8" y1="11" y2="13"/><line x1="16" x2="16" y1="11" y2="13"/></svg>
+                        Robotique
+                      </button>
+                      <button type="button" class="chip" data-interest="Programmation" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        Programmation
+                      </button>
+                      <button type="button" class="chip" data-interest="Intelligence artificielle" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+                        Intelligence artificielle
+                      </button>
+                      <button type="button" class="chip" data-interest="Électronique" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        Électronique
+                      </button>
+                      <button type="button" class="chip" data-interest="Mécanique" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4"/><path d="M12 19v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M1 12h4"/><path d="M19 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
+                        Mécanique
+                      </button>
+                      <button type="button" class="chip" data-interest="CAO / Conception" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        CAO / Conception
+                      </button>
+                      <button type="button" class="chip" data-interest="Automatisation" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="19" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="13" cy="13" r="3"/><path d="M5 17 13 14"/><path d="M11 11l6-4"/></svg>
+                        Automatisation
+                      </button>
+                      <button type="button" class="chip" data-interest="IoT" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9l5 4V5l-5 4z"/><path d="M13 4L8.69 2.08a1 1 0 0 0-1.38.91V6"/><path d="m23 9-9 6-3.89-2.6"/><path d="M6 14l-2 2"/><circle cx="4" cy="18" r="2"/></svg>
+                        IoT
+                      </button>
+                      <button type="button" class="chip" data-interest="Innovation" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        Innovation
+                      </button>
+                      <button type="button" class="chip" data-interest="Gestion de projets" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h4a8 8 0 0 1 8 8v10a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3z"/><path d="M9 12h6"/><path d="M9 16h6"/><path d="M11 5v19"/></svg>
+                        Gestion de projets
+                      </button>
+                      <button type="button" class="chip" data-interest="Communication" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.28 9.05a5.5 5.5 0 1 0-10.56 0A5.5 5.5 0 0 0 12 17.55 5.5 5.5 0 0 0 17.28 9.05z"/><path d="M12 17.55V22"/><path d="M8 22h8"/></svg>
+                        Communication
+                      </button>
+                      <button type="button" class="chip" data-interest="Événementiel" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2" transform="rotate(0 12 16)"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/></svg>
+                        Événementiel
+                      </button>
+                      <button type="button" class="chip" data-interest="Autre" aria-pressed="false" id="chip-autre">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+                        Autre
+                      </button>
+                    </div>
+                    <div class="chip-other-wrap" id="chip-other-wrap">
+                      <label class="field-label" for="autre-interet">Précise ton centre d'intérêt</label>
+                      <input type="text" id="autre-interet" name="autre-interet" placeholder="Ex : Photographie technique, drones..." />
+                    </div>
+                    <p class="err-msg" id="err-interets"></p>
+                  </fieldset>
+                </div>
+
+                <!-- STEP 4 : Confirmation -->
+                <div class="step" data-step="3" role="group" aria-labelledby="step-title-3">
+                  <h3 class="step-title" id="step-title-3">Presque terminé !</h3>
+                  <p class="step-sub">Vérifie tes informations avant de valider ton inscription.</p>
+                  <div class="summary-list" id="summary-list"></div>
+                  <div class="summary-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    En confirmant, tu deviens membre officiel de la promotion ROBOTECH 2026/2027.
+                  </div>
+                </div>
+
+                <div class="form-nav">
+                  <button type="button" class="btn btn-back" id="btn-back" hidden>Retour</button>
+                  <button type="button" class="btn btn-primary btn-next" id="btn-next">Continuer
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="17" height="17" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  </button>
+                  <button type="submit" class="btn btn-submit" id="btn-submit" hidden>Rejoindre ROBOTECH</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Succès -->
+          <div class="success-panel" id="success-panel" role="status" aria-live="polite">
+            <div class="confetti-box" aria-hidden="true"></div>
+            <div class="success-check" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <circle class="ring" cx="50" cy="50" r="42" />
+                <polyline class="mark" points="32,52 45,65 70,38" />
+              </svg>
+            </div>
+            <h2>Bienvenue dans <span>ROBOTECH</span> !</h2>
+            <p>Ton inscription pour la promotion 2026/2027 a bien été enregistrée. Nous sommes ravis de t'accueillir dans la communauté ROBOTECH FSTT.</p>
+            <button type="button" class="btn btn-reset" id="btn-reset">Nouvelle inscription</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="footer">
+      <div class="container">
+        <div class="brand">
+          <img src="src/assets/logo-robotech.png" alt="Logo ROBOTECH" />
+          <span class="brand-name">ROBO<span>TECH</span></span>
+        </div>
+        <p>© 2026 Club Robotech — LOUKILI MOHAMED. Tous droits réservés.</p>
+        <a class="contact-link" href="https://loukili-mohameding.netlify.app/#contact" target="_blank" rel="noopener noreferrer">Me contacter (Portfolio)</a>
+      </div>
+    </footer>
+  </main>
+
+  <!--
+    ======================================================================
+    GOOGLE SHEETS — ADAPTATION DU GOOGLE APPS SCRIPT (OBLIGATOIRE)
+    ======================================================================
+    La page envoie les données en POST (Content-Type: text/plain;charset=utf-8)
+    vers le même endpoint utilisé par le projet CATIA :
+      https://script.google.com/macros/s/AKfycbyK8xLAiN4Rqy1F5_hBX_XrwDBwrAEwSqsGt2xDUo93v4xOSPYclTy9JPWeuMaqNYqn/exec
+
+    Les 8 en-têtes suivants doivent être présents sur la LIGNE 1 du Google Sheet,
+    dans cet ordre exact :
+      Nom | Prénom | Numéro | Email | Niveau d'étude | Filière d'étude | Déjà été membre | Centre d'intérêt
+
+    Les inscriptions sont ajoutées à partir de la LIGNE 2.
+
+    Colle le script ci-dessous dans Éditeur de script (Extensions > Apps Script),
+    remplace le code existant, puis redéploie le web app :
+
+    ----------------------------------------------------------------------
+    function doPost(e) {
+      const lock = LockService.getScriptLock();
+      lock.waitLock(60000);
+      try {
+        const data = JSON.parse(e.postData.contents);
+        const sheet = SpreadsheetApp.getActiveSpreadsheet();
+        const sh = sheet.getSheets()[0] || sheet.insertSheet();
+
+        const headers = [
+          "Nom", "Prénom", "Numéro", "Email",
+          "Niveau d'étude", "Filière d'étude", "Déjà été membre", "Centre d'intérêt"
+        ];
+
+        if (sh.getLastRow() === 0) {
+          sh.appendRow(headers);
+        }
+
+        sh.appendRow([
+          String(data["Nom"] || ""),
+          String(data["Prénom"] || ""),
+          String(data["Numéro"] || ""),
+          String(data["Email"] || ""),
+          String(data["Niveau d'étude"] || ""),
+          String(data["Filière d'étude"] || ""),
+          String(data["Déjà été membre"] || ""),
+          String(data["Centre d'intérêt"] || "")
+        ]);
+
+        return ContentService.createTextOutput(JSON.stringify({ result: "success", row: sh.getLastRow() }))
+          .setMimeType(ContentService.MimeType.JSON);
+      } catch (err) {
+        return ContentService.createTextOutput(JSON.stringify({ result: "error", message: String(err) }))
+          .setMimeType(ContentService.MimeType.JSON);
+      } finally {
+        lock.releaseLock();
+      }
+    }
+    ----------------------------------------------------------------------
+
+    Si tu redéploies le web app et que l'URL change, mets à jour la constante
+    GOOGLE_SCRIPT_URL dans le code JavaScript de cette page.
+  -->
+
+  <script>
+    (function () {
+      "use strict";
+
+      /* ---------- Helper ---------- */
+      var $ = function (s, c) { return (c || document).querySelector(s); };
+      var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+
+      var header = $("#header");
+
+      /* ---------- Header scroll ---------- */
+      function onScroll() {
+        if (window.scrollY > 10) { header.classList.add("scrolled"); }
+        else { header.classList.remove("scrolled"); }
+      }
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+
+      /* ---------- Menu mobile ---------- */
+      var burger = $("#nav-burger");
+      var mobileMenu = $("#mobile-menu");
+      function closeMenu() {
+        mobileMenu.classList.remove("open");
+        burger.setAttribute("aria-expanded", "false");
+        burger.setAttribute("aria-label", "Ouvrir le menu");
+      }
+      burger.addEventListener("click", function () {
+        var open = mobileMenu.classList.toggle("open");
+        burger.setAttribute("aria-expanded", open ? "true" : "false");
+        burger.setAttribute("aria-label", open ? "Fermer le menu" : "Ouvrir le menu");
+      });
+      $$("#mobile-menu a").forEach(function (a) {
+        a.addEventListener("click", closeMenu);
+      });
+
+      /* ---------- Scrollspy ---------- */
+      var spyLinks = $$('#nav-links a[data-link]');
+      var spyIds = spyLinks.map(function (a) { return a.getAttribute("data-link"); });
+      var spySections = spyIds.map(function (id) { return document.getElementById(id); }).filter(Boolean);
+
+      function spy() {
+        if (window.scrollY < 200) {
+          spyLinks.forEach(function (a) { a.classList.remove("active"); });
+          return;
+        }
+        var current = null;
+        spySections.forEach(function (s) {
+          var r = s.getBoundingClientRect();
+          if (r.top <= 160 && r.bottom >= 160) { current = s.getAttribute("id"); }
+        });
+        spyLinks.forEach(function (a) {
+          a.classList.toggle("active", a.getAttribute("data-link") === current);
+        });
+      }
+      window.addEventListener("scroll", spy, { passive: true });
+
+      /* ---------- Reveal on scroll ---------- */
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+        $$(".reveal").forEach(function (el) { io.observe(el); });
+      } else {
+        $$(".reveal").forEach(function (el) { el.classList.add("in-view"); });
+      }
+
+      /* ---------- Particules hero ---------- */
+      (function particles() {
+        var wrap = $("#hero-particles");
+        if (!wrap) { return; }
+        var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var count = window.innerWidth < 600 ? 8 : 16;
+        var html = "";
+        for (var i = 0; i < count; i++) {
+          var r = (Math.random() * 4 + 2).toFixed(1);
+          var left = (Math.random() * 100).toFixed(1);
+          var dur = (Math.random() * 9 + 7).toFixed(1);
+          var delay = (Math.random() * 8).toFixed(1);
+          var op = (Math.random() * 0.5 + 0.25).toFixed(2);
+          html += '<span class="particle" style="left:' + left + '%;width:' + r + 'px;height:' + r +
+            'px;opacity:' + op + ';animation-duration:' + dur + 's;animation-delay:-' + delay + 's;"></span>';
+        }
+        wrap.innerHTML = html;
+        if (prefersReduced) {
+          $$(".particle", wrap).forEach(function (p) { p.style.animation = "none"; p.style.opacity = "0.5"; });
+        }
+      })();
+
+      /* ---------- Google Sheets ---------- */
+      var GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyK8xLAiN4Rqy1F5_hBX_XrwDBwrAEwSqsGt2xDUo93v4xOSPYclTy9JPWeuMaqNYqn/exec";
+
+      /* ---------- Form ---------- */
+      var form = $("#register-form");
+      var steps = $$(".step", form);
+      var bullets = $$(".step-bullet");
+      var progressFill = $("#progress-fill");
+      var btnNext = $("#btn-next");
+      var btnBack = $("#btn-back");
+      var btnSubmit = $("#btn-submit");
+      var formAlert = $("#form-alert");
+      var formRoot = $("#form-root");
+      var successPanel = $("#success-panel");
+      var btnReset = $("#btn-reset");
+
+      var TOTAL = 4;
+      var currentStep = 0;
+
+      var val = {
+        nom: "", prenom: "", numero: "", email: "",
+        niveau: "", filiere: "", dejaMembre: "",
+        interets: {}, autreInteret: ""
+      };
+
+      /* ---------- Helpers messages ---------- */
+      function showAlert(msg) {
+        formAlert.textContent = msg;
+        formAlert.classList.add("show");
+      }
+      function hideAlert() {
+        formAlert.classList.remove("show");
+        formAlert.textContent = "";
+      }
+      function setError(fieldName, message) {
+        var field = $('[data-field="' + fieldName + '"]', form);
+        if (!field) { return; }
+        field.classList.add("invalid");
+        var el = $("#err-" + fieldName);
+        if (el) { el.textContent = message; el.setAttribute("role", "alert"); }
+      }
+      function clearError(fieldName) {
+        var field = $('[data-field="' + fieldName + '"]', form);
+        if (!field) { return; }
+        field.classList.remove("invalid");
+        var el = $("#err-" + fieldName);
+        if (el) { el.textContent = ""; el.removeAttribute("role"); }
+      }
+
+      /* ---------- Validators ---------- */
+      function validators() {
+        return [
+          function () { /* step 0 */
+            var ok = true;
+            val.nom = $("#nom").value.trim();
+            val.prenom = $("#prenom").value.trim();
+            if (val.nom.length < 2) { setError("nom", "Ton nom est requis (2 caractères minimum)."); ok = false; }
+            else { clearError("nom"); }
+            if (val.prenom.length < 2) { setError("prenom", "Ton prénom est requis (2 caractères minimum)."); ok = false; }
+            else { clearError("prenom"); }
+            return ok;
+          },
+          function () { /* step 1 */
+            var ok = true;
+            val.numero = $("#numero").value.trim();
+            val.email = $("#email").value.trim();
+            val.niveau = $("#niveau").value.trim();
+            val.filiere = $("#filiere").value.trim();
+
+            var digits = val.numero.replace(/\D/g, "");
+            if (digits.length < 9 || digits.length > 14) {
+              setError("numero", "Entre un numéro de téléphone valide (ex : 06 12 34 56 78)."); ok = false;
+            } else { clearError("numero"); }
+
+            var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+            if (!emailRe.test(val.email)) { setError("email", "Ton adresse email semble invalide."); ok = false; }
+            else { clearError("email"); }
+
+            if (!val.niveau) { setError("niveau", "Sélectionne ton niveau d'étude."); ok = false; }
+            else { clearError("niveau"); }
+
+            if (val.filiere.length < 2) { setError("filiere", "Indique ta filière d'étude."); ok = false; }
+            else { clearError("filiere"); }
+
+            return ok;
+          },
+          function () { /* step 2 */
+            var ok = true;
+            var selected = radioValue("dejaMembre");
+            val.dejaMembre = selected;
+            if (!selected) {
+              setError("dejaMembre", "Choisis Oui ou Non."); ok = false;
+            } else { clearError("dejaMembre"); }
+
+            var interests = Object.keys(val.interets);
+            var others = $("#autre-interet").value.trim();
+            val.autreInteret = others;
+            if (interests.length === 0) {
+              setError("interets", "Sélectionne au moins un centre d'intérêt."); ok = false;
+            } else { clearError("interets"); }
+            return ok;
+          },
+          function () { return true; } /* step 3 (confirmation) */
+        ];
+      }
+      var stepValidators = validators();
+
+      function radioValue(name) {
+        var checked = $('input[name="' + name + '"]:checked', form);
+        return checked ? checked.value : "";
+      }
+
+      /* ---------- Rendering ---------- */
+      function renderStep() {
+        steps.forEach(function (s, i) {
+          s.classList.toggle("active", i === currentStep);
+        });
+        bullets.forEach(function (b, i) {
+          b.classList.toggle("active", i === currentStep);
+          b.classList.toggle("done", i < currentStep);
+        });
+        var circle = null;
+        for (var i = 0; i < TOTAL; i++) {
+          circle = $("#bullet-" + i);
+          if (i < currentStep) { circle.textContent = ""; circle.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>'; }
+          else { circle.innerHTML = String(i + 1); }
+        }
+        progressFill.style.width = ((currentStep + 1) / TOTAL * 100) + "%";
+
+        btnNext.hidden = currentStep === 3;
+        btnSubmit.hidden = currentStep !== 3;
+        btnBack.hidden = currentStep === 0;
+
+        if (!btnSubmit.hidden) {
+          btnSubmit.disabled = false;
+          btnSubmit.innerHTML = "Rejoindre ROBOTECH";
+        }
+
+        if (currentStep === 3) { renderSummary(); }
+      }
+
+      function interestLabel() {
+        var labels = Object.keys(val.interets).filter(function (k) { return val.interets[k]; });
+        if (val.interets["Autre"]) {
+          labels = labels.filter(function (l) { return l !== "Autre"; });
+          var detail = val.autreInteret ? (" : " + val.autreInteret) : "";
+          labels.push("Autre" + detail);
+        }
+        return labels.join(", ");
+      }
+
+      function renderSummary() {
+        var rows = [
+          ["Nom", val.nom],
+          ["Prénom", val.prenom],
+          ["Numéro", val.numero],
+          ["Email", val.email],
+          ["Niveau d'étude", val.niveau],
+          ["Filière d'étude", val.filiere],
+          ["Déjà été membre", val.dejaMembre === "oui" ? "Oui" : val.dejaMembre === "non" ? "Non" : "—"],
+          ["Centre d'intérêt", interestLabel() || "—"]
+        ];
+        var html = "";
+        rows.forEach(function (r) {
+          html += '<div class="summary-row"><span class="k">' + r[0] + "</span><span class=\"v\">" + escapeHtml(r[1]) + "</span></div>";
+        });
+        $("#summary-list").innerHTML = html;
+      }
+
+      function escapeHtml(s) {
+        return String(s == null ? "" : s)
+          .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+      }
+
+      /* ---------- Chips ---------- */
+      var chips = $$(".chip", form);
+      chips.forEach(function (chip) {
+        chip.addEventListener("click", function () {
+          var key = chip.getAttribute("data-interest");
+          val.interets[key] = !val.interets[key];
+          chip.setAttribute("aria-pressed", String(val.interets[key]));
+          clearError("interets");
+          if (key === "Autre") {
+            $("#chip-other-wrap").classList.toggle("open", !!val.interets[key]);
+            if (!val.interets[key]) { $("#autre-interet").value = ""; val.autreInteret = ""; }
+          }
+        });
+      });
+
+      /* ---------- Nettoyage erreurs au fil de la saisie ---------- */
+      ["nom", "prenom", "numero", "email", "niveau", "filiere"].forEach(function (name) {
+        var input = $("#" + name);
+        input.addEventListener("input", function () { clearError(name); });
+        input.addEventListener("blur", function () {
+          if (input.value.trim()) { clearError(name); }
+        });
+      });
+      $$('input[name="dejaMembre"]', form).forEach(function (r) {
+        r.addEventListener("change", function () { clearError("dejaMembre"); });
+      });
+
+      /* ---------- Navigation ---------- */
+      function goToStep(target) {
+        var step = Math.max(0, Math.min(TOTAL - 1, target));
+        currentStep = step;
+        renderStep();
+        hideAlert();
+        var active = $(".step.active", form);
+        if (active) {
+          var focusEl = $("input:not([type=hidden]), button", active);
+          if (focusEl) { focusEl.focus(); }
+        }
+      }
+
+      function next() {
+        var validator = stepValidators[currentStep];
+        validateLiveFields();
+        if (!validator()) {
+          showAlert("Certains champs nécessitent ton attention. Corrige-les pour continuer.");
+          focusFirstInvalid();
+          return;
+        }
+        hideAlert();
+        if (currentStep < TOTAL - 1) {
+          goToStep(currentStep + 1);
+        }
+      }
+
+      function validateLiveFields() {
+        stepValidators.forEach(function (fn, i) {
+          if (i < currentStep) { fn(); }
+        });
+      }
+
+      function focusFirstInvalid() {
+        var invalid = $(".field.invalid input:not([type=hidden])", form);
+        if (!invalid) { invalid = $(".field.invalid .chip[aria-pressed='false']", form); }
+        if (invalid) { invalid.focus(); }
+      }
+
+      btnNext.addEventListener("click", next);
+      btnBack.addEventListener("click", function () {
+        if (currentStep > 0) { goToStep(currentStep - 1); }
+      });
+
+      /* ---------- Confettis ---------- */
+      function confetti() {
+        var box = $(".confetti-box");
+        var colors = ["#1a8cff", "#ff751a", "#2fd47f", "#ffd93d", "#7ec3ff"];
+        var html = "";
+        for (var i = 0; i < 14; i++) {
+          var left = (Math.random() * 100).toFixed(1);
+          var delay = (Math.random() * 0.8).toFixed(2);
+          var rot = (Math.random() * 40 - 20).toFixed(0);
+          var color = colors[Math.floor(Math.random() * colors.length)];
+          var scale = (Math.random() * 0.7 + 0.6).toFixed(2);
+          html += '<span class="confetti" style="left:' + left + '%;animation-delay:' + delay + 's;background:' + color + ';transform:rotate(' + rot + 'deg) scale(' + scale + ');"></span>';
+        }
+        box.innerHTML = html;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          $$(".confetti", box).forEach(function (c) { c.style.display = "none"; });
+        }
+      }
+
+      /* ---------- Submit ---------- */
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (currentStep < TOTAL - 1) {
+          next();
+          return;
+        }
+        // validation complète de sécurité
+        var allOk = stepValidators.every(function (fn) { return fn(); });
+        if (!allOk) {
+          goToStep(stepValidators.findIndex(function (fn) { return !fn(); }));
+          showAlert("Certains champs nécessitent ton attention. Corrige-les pour continuer.");
+          return;
+        }
+
+        var payload = {
+          "Nom": val.nom,
+          "Prénom": val.prenom,
+          "Numéro": "'" + val.numero,
+          "Email": val.email,
+          "Niveau d'étude": val.niveau,
+          "Filière d'étude": val.filiere,
+          "Déjà été membre": val.dejaMembre === "oui" ? "Oui" : "Non",
+          "Centre d'intérêt": interestLabel()
+        };
+
+        btnSubmit.disabled = true;
+        btnSubmit.innerHTML = '<span class="spinner" aria-hidden="true"></span> Envoi en cours...';
+        hideAlert();
+
+        fetch(GOOGLE_SCRIPT_URL, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload)
+        })
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (result) {
+            if (result && result.result === "success") {
+              successPanel.querySelector(".confetti-box").innerHTML = "";
+              formRoot.style.display = "none";
+              successPanel.classList.add("show");
+              confetti();
+            } else {
+              throw new Error(result && result.message ? result.message : "Erreur inconnue");
+            }
+          })
+          .catch(function (error) {
+            console.error("Erreur lors de l'envoi :", error);
+            showAlert("Une erreur s'est produite pendant l'envoi. Vérifie ta connexion et réessaie.");
+            btnSubmit.disabled = false;
+            btnSubmit.innerHTML = "Rejoindre ROBOTECH";
+          });
+      });
+
+      /* ---------- Reset ---------- */
+      btnReset.addEventListener("click", function () {
+        form.reset();
+        val.nom = ""; val.prenom = ""; val.numero = ""; val.email = "";
+        val.niveau = ""; val.filiere = ""; val.dejaMembre = ""; val.interets = {}; val.autreInteret = "";
+        chips.forEach(function (c) { c.setAttribute("aria-pressed", "false"); });
+        $("#chip-other-wrap").classList.remove("open");
+        $$(".field.invalid", form).forEach(function (f) { f.classList.remove("invalid"); });
+        $$(".err-msg", form).forEach(function (m) { m.textContent = ""; m.removeAttribute("role"); });
+        successPanel.classList.remove("show");
+        formRoot.style.display = "";
+        currentStep = 0;
+        renderStep();
+        var first = $("#nom");
+        if (first) { first.focus(); }
+      });
+
+      /* ---------- Init ---------- */
+      renderStep();
+    })();
+  </script>
+</body>
+</html>

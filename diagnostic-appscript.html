@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnostic envoi Google Sheets</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; background: #0d1117; color: #e6edf3; }
+    h1 { font-size: 1.3rem; }
+    pre { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 14px; white-space: pre-wrap; word-break: break-word; }
+    .mono { font-family: ui-monospace, Consolas, monospace; font-size: 0.85rem; }
+    input[type=text], textarea { width: 100%; background: #161b22; border: 1px solid #30363d; color: #e6edf3; border-radius: 6px; padding: 8px 10px; }
+    textarea { min-height: 120px; }
+    label { display: block; margin: 14px 0 6px; font-weight: 600; }
+    button { background: #238636; color: #fff; border: 0; border-radius: 6px; padding: 12px 18px; font-size: 1rem; cursor: pointer; }
+    button:disabled { opacity: .6; }
+    .ok { color: #3fb950; } .ko { color: #f85149; }
+  </style>
+</head>
+<body>
+  <h1>Diagnostic — envoi vers Apps Script</h1>
+  <p>Ce test envoie une inscription factice vers l'endpoint exact utilisé par la page. Regarde la <b>réponse brute</b> :</p>
+  <ul>
+    <li class="ok">`{"result":"success", ...}` → le script a bien reçu et enregistré → vérifie la bonne spreadsheet/tab.</li>
+    <li class="ko">`{"result":"error", "message":"..."}` → le script exécuté a planté : le message dit pourquoi.</li>
+    <li class="ko">Redirection vers accounts.google.com / 302 → le web app n'est pas accessible pour toi (access « Moi uniquement » ou URL invalide).</li>
+    <li class="ko">Erreur réseau CORS → déploiement incomplet ou jamais redéployé.</li>
+  </ul>
+
+  <label for="url">GOOGLE_SCRIPT_URL</label>
+  <input type="text" id="url" class="mono" value="https://script.google.com/macros/s/AKfycbxGQLp7_uS3nYTB0ZvEqQvpklyUhzmePbkbQJxFRpFXq2wFV5ztRbq4tPWo5XhPhCPp/exec" />
+
+  <label for="payload">Payload envoyé (même format que le projet CATIA — 7 clés)</label>
+  <textarea id="payload" class="mono">{
+  "lastName": "TEST-DIAG",
+  "firstName": "Diagnostic",
+  "email": "test-diagnostic@example.com",
+  "phone": "'0600000000",
+  "studyLevel": "Bac+2",
+  "studyField": "Genie Mecanique",
+  "status": "externe_nouveau"
+}</textarea>
+
+  <div style="margin:18px 0"><button id="send">Envoyer le test</button> <span id="state" class="mono"></span></div>
+
+  <label>Réponse brute du serveur</label>
+  <pre id="out">(en attente…)</pre>
+
+  <script>
+    document.getElementById("send").addEventListener("click", async () => {
+      const btn = document.getElementById("send");
+      const out = document.getElementById("out");
+      const state = document.getElementById("state");
+      btn.disabled = true;
+      state.textContent = "envoi en cours…";
+      out.textContent = "(en attente…)";
+      const url = document.getElementById("url").value.trim();
+      const body = document.getElementById("payload").value.trim();
+      const t0 = Date.now();
+      try {
+        const res = await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: body
+        });
+        const text = await res.text();
+        out.textContent = "HTTP " + res.status + " " + res.statusText + " (" + (Date.now() - t0) + " ms)\nFinal URL: " + res.url + "\n\nRéponse:\n" + text;
+        state.textContent = "terminé";
+        state.className = "mono " + (text.indexOf('"result":"success"') !== -1 ? "ok" : "ko");
+      } catch (err) {
+        out.textContent = "ÉCHEC RÉSEAU (" + (Date.now() - t0) + " ms)\n\n" + err.message;
+        state.textContent = "échec réseau";
+        state.className = "mono ko";
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
